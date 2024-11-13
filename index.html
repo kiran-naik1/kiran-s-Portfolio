@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiran's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <nav id="desktop-nav">
+        <div class="logo">kiran's Portfolio.</div>
+        <div class="menu">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="mobile-nav">
+        <div class="logo">kiran.</div>
+        <div class="mobile-menu">
+          <div class="mobile-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <div class="left-section">
+          Hi, I'm <span class="my-name">Kiran</span>
+          <div class="ele"><span id="element"></span></div>
+          <div class="button">
+            <button class="btn1" onclick="window.open('./assets/resume.pdf')">
+              Download Resume
+            </button>
+            <button class="btn2" onclick="location.href='./#contact'">
+              Contact me
+            </button>
+          </div>
+          <div class="socials-container">
+            <img
+              src="./images/linkedin.png"
+              alt="linkedin profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/kiran-naik-bhatkal/'"
+            />
+            <img
+              src="./images/Github.png"
+              alt="Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/kiran-naik1'"
+            />
+          </div>
+        </div>
+
+        <div class="right-section">
+          <img src="./images/bg.png" alt="" />
+        </div>
+      </section>
+
+      <!-- Mobile view  -->
+
+      <section id="mobile-home">
+        <div class="m-left-section">
+          Hi, I'm <span class="my-name">Kiran</span>
+          <div class="ele1"><span id="element1"></span></div>
+          <div class="button">
+            <button class="btn1" onclick="window.open('./assets/resume.pdf')">
+              Download Resume
+            </button>
+            <button class="btn2" onclick="location.href='./#contact'">
+              Contact me
+            </button>
+          </div>
+          <div class="socials-container">
+            <img
+              src="./images/linkedin.png"
+              alt="linkedin profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/kiran-naik-bhatkal/'"
+            />
+            <img
+              src="./images/Github.png"
+              alt="Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/kiran-naik1'"
+            />
+          </div>
+        </div>
+
+        <div class="m-right-section">
+          <img src="./images/bg.png" alt="" />
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="about">
+        <p class="section__text__p1">Get to know more</p>
+        <h2 class="title">About Me</h2>
+        <div class="section-container">
+          <div class="about-details-container">
+            <div class="about-container">
+              <p class="text-container">
+                Highly motivated and detail-oriented Computer Science student
+                with a strong foundation in software development and a passion
+                for learning new technologies. Skilled in front-end development,
+                Python with hands-on experience in building web applications and
+                programming. Looking to offer technical skills and passion for a
+                thriving team and grow in the world of software engineering.
+              </p>
+              <div class="details-container">
+                <div class="education">
+                  <img
+                    src="./images/education.png"
+                    alt="education"
+                    class="icon"
+                  />
+                  <h3>Education</h3>
+                  <p>
+                    B.Tech in <br />
+                    Computer Science and Engineering
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills">
+        <p class="section__text__p1">Explore My</p>
+        <h2 class="title">Skills</h2>
+        <div class="skill-section-container">
+          <div class="skills-container">
+            <div class="front-end">
+              <h3>Front-end Development</h3>
+              <div class="skills-box">
+                <img src="./images/html.png" alt="HTML" class="skills-icon" />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </div>
+              <div class="skills-box">
+                <img src="./images/css.png" alt="CSS" class="skills-icon" />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </div>
+              <div class="skills-box">
+                <img
+                  src="./images/js.png"
+                  alt="JavaScript"
+                  class="skills-icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </div>
+            </div>
+            <div class="other-skills">
+              <h3>Other Skills</h3>
+              <div class="skills-box">
+                <img
+                  src="./images/python.png"
+                  alt="python"
+                  class="skills-icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Basic</p>
+                </div>
+              </div>
+              <div class="skills-box">
+                <img src="./images/sql.png" alt="sql" class="skills-icon" />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Basic</p>
+                </div>
+              </div>
+              <div class="skills-box">
+                <img src="./images/git.png" alt="git" class="skills-icon" />
+                <div>
+                  <h3>Git</h3>
+                  <p>Basic</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <p class="section__text__p1">Take a look at my</p>
+        <h2 class="title">Projects</h2>
+        <div class="project-section-container">
+          <div class="project-container">
+            <div class="main-projects-container">
+              <div class="main-project">
+                <div class="project-image-container">
+                  <img
+                    src="./images/food-order.png"
+                    alt="online food-order"
+                    class="project-image"
+                  />
+                </div>
+                <h3>Online Food Order</h3>
+                <div class="project-btn-container">
+                  <button
+                    class="project-btn"
+                    onclick="location.href='https://github.com/kiran-naik1/Online-Food-Order'"
+                  >
+                    Github
+                  </button>
+                  <button
+                    class="project-btn"
+                    onclick="location.href='https://kiran-naik1.github.io/Online-Food-Order/'"
+                  >
+                    Live Demo
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <h2 class="subtitle">Practice Projects</h2>
+            <div class="practice-projects-container">
+              <div class="practice-project">
+                <div class="practice-project-image">
+                  <img
+                    src="./images/drumkit.png"
+                    alt="online food-order"
+                    class="project-image"
+                  />
+                </div>
+                <h3>Drum Kit</h3>
+                <div class="project-btn-container">
+                  <button
+                    class="project-btn"
+                    onclick="location.href='https://github.com/kiran-naik1/Drum-kit'"
+                  >
+                    Github
+                  </button>
+                  <button
+                    class="project-btn"
+                    onclick="location.href='https://kiran-naik1.github.io/Drum-kit/'"
+                  >
+                    Live Demo
+                  </button>
+                </div>
+              </div>
+              <div class="practice-project">
+                <div class="practice-project-image">
+                  <img
+                    src="./images/tictactoe.png"
+                    alt="online food-order"
+                    class="project-image"
+                  />
+                </div>
+                <h3>Tic Tac Toe game</h3>
+                <div class="project-btn-container">
+                  <button
+                    class="project-btn"
+                    onclick="location.href='https://github.com/kiran-naik1/Tic-Tac-Toe-game'"
+                  >
+                    Github
+                  </button>
+                  <button
+                    class="project-btn"
+                    onclick="location.href='https://kiran-naik1.github.io/Tic-Tac-Toe-game/'"
+                  >
+                    Live Demo
+                  </button>
+                </div>
+              </div>
+              <div class="practice-project">
+                <div class="practice-project-image">
+                  <img
+                    src="./images/rockpapsci.png"
+                    alt="online food-order"
+                    class="project-image"
+                  />
+                </div>
+                <h3>Rock Paper Scissor</h3>
+                <div class="project-btn-container">
+                  <button
+                    class="project-btn"
+                    onclick="location.href='https://github.com/kiran-naik1/Rock-Paper-Scissor'"
+                  >
+                    Github
+                  </button>
+                  <button
+                    class="project-btn"
+                    onclick="location.href='https://kiran-naik1.github.io/Rock-Paper-Scissor/'"
+                  >
+                    Live Demo
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h2 class="title">Contact Me</h2>
+        <div class="contact-section-container">
+          <div class="contact-section">
+            <img
+              src="./images/mail.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p>
+              <a href="mailto:kmnaik560@gmail.com">@email</a>
+            </p>
+          </div>
+          <div class="contact-section">
+            <img
+              src="./images/linkedin1.png"
+              alt="linkedin icon"
+              class="icon contact-icon linkedin"
+            />
+            <p>
+              <a href="https://www.linkedin.com/in/kiran-naik-bhatkal/"
+                >LinkedIn</a
+              >
+            </p>
+          </div>
+          <div class="contact-section">
+            <img
+              src="./images/ig.png"
+              alt="IG icon"
+              class="icon contact-icon ig-icon"
+            />
+            <p>
+              <a
+                href="https://www.instagram.com/kiran_naik.332?igsh=MTVuN3l6ZXBsdDgzNg=="
+                >Instagram</a
+              >
+            </p>
+          </div>
+          <div class="contact-section">
+            <img
+              src="./images/X.png"
+              alt="X icon"
+              class="icon contact-icon x-icon"
+            />
+            <p>
+              <a href="https://x.com/Kiran_m_naik?t=BGiwRqpVRRyEoDISkvuANw&s=08"
+                >X</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright &#169; 2023 Kiran Naik. All Rights Reserved.</p>
+    </footer>
+    <button id="backToTop" title="Go to top">&#8679;</button>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer."],
+        typeSpeed: 50,
+      });
+    </script>
+    <script>
+      var typed = new Typed("#element1", {
+        strings: ["Web Developer."],
+        typeSpeed: 50,
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #mobile-nav {
+    display: flex;
+  }
+  #home {
+    display: none;
+  }
+  #mobile-home {
+    display: flex;
+  }
+  .education {
+    margin: 2rem;
+    width: auto;
+    padding: 2rem;
+    border: rgb(127, 127, 127) 1px solid;
+    border-radius: 2rem;
+  }
+
+  .main-project {
+    width: 20rem;
+    margin: 1rem;
+    padding: 1rem;
+    border: rgb(127, 127, 127) 1px solid;
+    border-radius: 3rem;
+  }
+  .project-image-container img {
+    height: 50%;
+    width: 18rem;
+    border-radius: 2rem;
+  }
+  .practice-project {
+    width: 15rem;
+    margin: 1rem 0.5rem;
+    padding: 2rem;
+    border: rgb(127, 127, 127) 1px solid;
+    border-radius: 3rem;
+  }
+  .practice-project-image img {
+    height: 50%;
+    width: 14rem;
+    border-radius: 2rem;
+  }
+}
